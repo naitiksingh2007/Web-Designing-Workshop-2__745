@@ -7,7 +7,7 @@ let colorBtn = document.getElementById("colorBtn");
 let fontBtn = document.getElementById("fontBtn");
 let toggleBtn = document.getElementById("toggleBtn");
 let resetBtn = document.getElementById("resetBtn");
-// 1. Change Heading Text (onclick)
+
 changeTextBtn.onclick = function() {
     heading.innerText = input.value;
 };
@@ -18,6 +18,8 @@ colorBtn.addEventListener("click", function() {
 
 fontBtn.onmouseover = function() {
     heading.style.fontSize = "40px";
+}; 
+
 let isVisible = true;
 toggleBtn.addEventListener("click", function() {
     if (isVisible) {
