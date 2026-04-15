@@ -1,7 +1,7 @@
 let heading = document.getElementById("heading");
 let input = document.getElementById("inputText");
 let para = document.getElementById("para");
-// Buttons
+
 let changeTextBtn = document.getElementById("changeTextBtn");
 let colorBtn = document.getElementById("colorBtn");
 let fontBtn = document.getElementById("fontBtn");
@@ -11,15 +11,13 @@ let resetBtn = document.getElementById("resetBtn");
 changeTextBtn.onclick = function() {
     heading.innerText = input.value;
 };
-// 2. Change Background Color (addEventListener)
+
 colorBtn.addEventListener("click", function() {
     document.body.style.backgroundColor = "lightblue";
 });
-// 3. Change Font Size (onmouseover)
+
 fontBtn.onmouseover = function() {
     heading.style.fontSize = "40px";
-};
-// 4. Show/Hide Paragraph
 let isVisible = true;
 toggleBtn.addEventListener("click", function() {
     if (isVisible) {
@@ -30,11 +28,11 @@ toggleBtn.addEventListener("click", function() {
         isVisible = true;
     }
 });
-// 5. Input Change Event (onchange)
+
 input.onchange = function() {
     console.log("Input changed to: " + input.value);
 };
-// 6. Reset Page
+
 resetBtn.addEventListener("click", function() {
     heading.innerText = "Welcome to JavaScript DOM";
     document.body.style.backgroundColor = "white";
