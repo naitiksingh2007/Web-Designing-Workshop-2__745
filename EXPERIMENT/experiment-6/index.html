@@ -1,18 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DOM Manipulation Experiment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation and Event Handling</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            width: 500px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            text-align: center;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        input {
+            width: 60%;
+            padding: 8px;
+            margin: 15px 0;
+        }
+
+        button {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d5fd1;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 id="heading">Welcome to My Page</h1>
-    <input type="text" id="inputText" placeholder="Enter your message">
-    <br><br>
-    <button id="changeTextBtn">Change Heading</button>
-    <button id="colorBtn">Change Background</button>
-    <button id="fontBtn">Change Font Size</button>
-    <button id="toggleBtn">Show/Hide Paragraph</button>
-    <button id="resetBtn">Reset</button>
-    <p id="para">This is a sample paragraph.</p>
+
+    <div class="container">
+
+        <h1 id="heading">Welcome to JavaScript Lab</h1>
+
+        <input type="text" id="textInput" placeholder="Enter new heading text">
+
+        <br>
+
+        <button id="changeHeadingBtn">Change Heading</button>
+
+        <button id="changeBgBtn">Change Background</button>
+
+        <button id="increaseFontBtn">Increase Font Size</button>
+
+        <button id="toggleParaBtn">Show/Hide Paragraph</button>
+
+        <button id="resetBtn">Reset</button>
+
+        <p id="paragraph">
+            This is a sample paragraph. JavaScript events can dynamically change content.
+        </p>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -3,19 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiment 5</title>
-    <link rel="stylesheet" herf=""
+    <title>Employee Salary Management System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            width: 420px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        #output {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
-    <h2> Employe management system</h2>
-    <input type="text" id="name " placeholder="Employee">
-    <br>
-    <button onclick="addEmployee()">Add employee</button>
-      <button onclick="displayEmployees()">display all</button>
-      <button onclick="filterEmployees()">salary>50000</button>
-      <button onclick="totalSalary()">Total Salary</button>
-      <button onclick="avgSalary()">Average Salary</button>
-    <button onclick="countDept()">Count By Department</button>
+
+    <div class="container">
+
+        <h2>Employee Salary Management System</h2>
+
+        <input type="text" id="name" placeholder="Employee Name"><br>
+
+        <input type="text" id="id" placeholder="Employee ID"><br>
+
+        <input type="number" id="salary" placeholder="Salary"><br>
+
+        <input type="text" id="department" placeholder="Department"><br>
+
+        <button onclick="addEmployee()">Add Employee</button><br>
+
+        <button onclick="displayEmployees()">Display All</button>
+
+        <button onclick="filterSalary()">Salary > 50000</button>
+
+        <button onclick="totalSalary()">Total Salary</button>
+
+        <button onclick="averageSalary()">Average Salary</button>
+
+        <button onclick="countDepartment()">Count by Department</button>
+
+        <div id="output"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+            
 
 </body>
 </html>
